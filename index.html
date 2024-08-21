@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo de Perguntas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="player-setup">
+        <h1>Cadastro de Jogadores</h1>
+        <label for="numPlayers">Quantidade de Jogadores:</label>
+        <input type="number" id="numPlayers" min="1" max="10">
+        <div id="playerNames"></div>
+        <button id="addPlayers">Adicionar Jogadores</button>
+        <button id="startGame" disabled>Iniciar Jogo</button>
+        <button id="clearPlayers">Limpar Jogadores</button>
+    </div>
+
+    <div id="game-screen" style="display: none;">
+        <h1 id="currentPlayer"></h1>
+        <div id="question"></div>
+        <div class="options"></div>
+        <div id="result"></div>
+        <button id="nextQuestion" style="display: none;">Próxima Pergunta</button>
+        <button id="restartGame">Reiniciar Jogo</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
