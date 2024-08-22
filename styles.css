@@ -69,3 +69,28 @@ button:disabled {
 .option:hover {
     background-color: rgb(216, 216, 103);
 }
+
+#scoreboard{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: #000000;
+    margin: 20px;
+    border-radius: 30px;
+
+}
+#result h1{
+    /* display: flex; */
+    align-items: center;
+    text-align: center;
+
+}
+#corret{
+    color: rgb(3, 255, 3);
+}
+#fail{
+    color: red;
+}
+#Rodadas{
+    font-size: 50px;
+}
